@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Programming languages</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="js/app.js"> </script>
+</head>
+<body>
+  <form id="new-item-form">
+    <div id="form-wrapper">
+      <div class="form-item">
+        <label for="language" class="primary">Programming Language</label>
+        <input type="text" id="language" required/>
+      </div>
+
+      <div class="form-item">
+        <label for="date" class="primary">Date learning commenced</label>
+        <select id="date">
+          <option value="" disabled selection></option>
+          <option value="April 2018">Apr 2018</option>
+          <option value="May 2018">May 2018</option>
+          <option value="June 2018">June 2018</option>
+        </select>
+      </div>
+
+      <div class="form-item">
+        <label for="level" class="primary">Ability level</label>
+        <select id="level">
+          <option value="" disabled selection></option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+        </select>
+      </div>
+
+    </div>
+
+    <input type="submit" value="Save"/>
+
+  </form>
+
+  <button id="delete-all">Delete all</button>
+
+  <h2>Programming Languages</h2>
+  <div id="programming-languages"></div>
+
+ </body>
+</html>
